@@ -2,3 +2,6 @@ The STM modules come with a boot partition that can use different protocols, inc
 Information about bootloading over CAN can be found here:
 https://community.st.com/t5/stm32-mcus/how-to-connect-to-the-stm32-can-bootloader-interface/ta-p/49283#anchor1
 I have written code that deinitializes the module (because deinitialization is required to jump to a new memory partition) and jumps to the bootloader.
+The an2606 PDF has information about the bootloader, and the an3254 PDF has information about the CAN protocol used in the bootloader.
+
+The next step would be to add a custom CAN command to execute the code I have written to jump to the bootloader.
